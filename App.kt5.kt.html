@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>App.kt5.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #629755; font-style: italic;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+.s5 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+App.kt5.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">id.infinitelearning.KotlinSubmission.exercise5</span>
+
+<span class="s0">fun </span><span class="s1">main() {</span>
+
+    <span class="s2">/**</span>
+     <span class="s2">* Latihan 1</span>
+     <span class="s2">* Buat variable dengan nama hero dibawah ini dan isi nilai variable tersebut dengan class Hero</span>
+     <span class="s2">*</span>
+     <span class="s2">*/</span>
+
+
+    <span class="s2">/**</span>
+     <span class="s2">* Latihan 2</span>
+     <span class="s2">* Set data profile dengan memanggil fungsi setProfile() dibawah ini</span>
+     <span class="s2">* Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)</span>
+     <span class="s2">*</span>
+     <span class="s2">*/</span>
+    <span class="s0">var </span><span class="s1">firsName: String = </span><span class="s3">&quot;Astutik&quot;</span>
+    <span class="s0">var </span><span class="s1">age = </span><span class="s3">&quot;23&quot;</span>
+
+    <span class="s1">println()</span>
+
+    <span class="s2">/**</span>
+     <span class="s2">* Latihan 3</span>
+     <span class="s2">* Tampilkan data profile dibawah ini, sebelum melakukan aktivitas</span>
+     <span class="s2">*</span>
+     <span class="s2">*/</span>
+    <span class="s1">data </span><span class="s0">class </span><span class="s1">Profile(</span>
+        <span class="s0">val </span><span class="s1">group: Int</span><span class="s0">,</span>
+        <span class="s0">val </span><span class="s1">jalan: Int</span><span class="s0">,</span>
+        <span class="s0">val </span><span class="s1">lari: Int</span><span class="s0">,</span>
+        <span class="s0">val </span><span class="s1">makan: Int</span><span class="s0">,</span>
+        <span class="s0">val </span><span class="s1">minum: Int</span><span class="s0">,</span>
+        <span class="s0">val </span><span class="s1">lompat: Int</span><span class="s0">,</span>
+        <span class="s0">val </span><span class="s1">duduk: Int</span>
+    <span class="s1">)</span>
+
+    <span class="s0">fun </span><span class="s1">main() {</span>
+        <span class="s0">val </span><span class="s1">profiles = listOf(</span>
+            <span class="s1">Profile(</span><span class="s4">1</span><span class="s0">, </span><span class="s4">5</span><span class="s0">, </span><span class="s4">2</span><span class="s0">, </span><span class="s4">3</span><span class="s0">, </span><span class="s4">1</span><span class="s0">, </span><span class="s4">3</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span><span class="s0">,</span>
+            <span class="s1">Profile(</span><span class="s4">2</span><span class="s0">, </span><span class="s4">2</span><span class="s0">, </span><span class="s4">2</span><span class="s0">, </span><span class="s4">1</span><span class="s0">, </span><span class="s4">3</span><span class="s0">, </span><span class="s4">1</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span><span class="s0">,</span>
+            <span class="s1">Profile(</span><span class="s4">3</span><span class="s0">, </span><span class="s4">3</span><span class="s0">, </span><span class="s4">1</span><span class="s0">, </span><span class="s4">5</span><span class="s0">, </span><span class="s4">1</span><span class="s0">, </span><span class="s4">5</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span><span class="s0">,</span>
+            <span class="s1">Profile(</span><span class="s4">4</span><span class="s0">, </span><span class="s4">5</span><span class="s0">, </span><span class="s4">4</span><span class="s0">, </span><span class="s4">4</span><span class="s0">, </span><span class="s4">4</span><span class="s0">, </span><span class="s4">3</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span><span class="s0">,</span>
+            <span class="s1">Profile(</span><span class="s4">5</span><span class="s0">, </span><span class="s4">4</span><span class="s0">, </span><span class="s4">1</span><span class="s0">, </span><span class="s4">3</span><span class="s0">, </span><span class="s4">5</span><span class="s0">, </span><span class="s4">5</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span><span class="s0">,</span>
+            <span class="s1">Profile(</span><span class="s4">6</span><span class="s0">, </span><span class="s4">2</span><span class="s0">, </span><span class="s4">4</span><span class="s0">, </span><span class="s4">2</span><span class="s0">, </span><span class="s4">2</span><span class="s0">, </span><span class="s4">7</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+        <span class="s1">)</span>
+
+        <span class="s0">for </span><span class="s1">(profile </span><span class="s0">in </span><span class="s1">profiles) {</span>
+            <span class="s1">println(</span><span class="s3">&quot;Group </span><span class="s0">${</span><span class="s1">profile.group</span><span class="s0">}</span><span class="s3">:&quot;</span><span class="s1">)</span>
+            <span class="s1">println(</span><span class="s3">&quot;Jalan </span><span class="s0">${</span><span class="s1">profile.jalan</span><span class="s0">}</span><span class="s3">x, Lari </span><span class="s0">${</span><span class="s1">profile.lari</span><span class="s0">}</span><span class="s3">x, Makan </span><span class="s0">${</span><span class="s1">profile.makan</span><span class="s0">}</span><span class="s3">x, Minum </span><span class="s0">${</span><span class="s1">profile.minum</span><span class="s0">}</span><span class="s3">x, Lompat </span><span class="s0">${</span><span class="s1">profile.lompat</span><span class="s0">}</span><span class="s3">x, Duduk </span><span class="s0">${</span><span class="s1">profile.duduk</span><span class="s0">}</span><span class="s3">x&quot;</span><span class="s1">)</span>
+            <span class="s1">println()</span>
+        <span class="s1">}</span>
+
+
+        <span class="s2">/**</span>
+        <span class="s2">Challenge:</span>
+        <span class="s2">Group 1: jalan 5x, lari 2x, makan 3x, minum 1x, lompat 3x, duduk 1x</span>
+        <span class="s2">Group 2: jalan 2x, lari 2x, makan 1x, minum 3x, lompat 1x, duduk 2x</span>
+        <span class="s2">Group 3: jalan 3x, lari 1x, makan 5x, minum 1x, lompat 5x, duduk 3x</span>
+        <span class="s2">Group 4: jalan 5x, lari 4x, makan 4x, minum 4x, lompat 3x, duduk 2x</span>
+        <span class="s2">Group 5: jalan 4x, lari 1x, makan 3x, minum 5x, lompat 5x, duduk 3x</span>
+        <span class="s2">Group 6: jalan 2x, lari 4x, makan 2x, minum 2x, lompat 7x, duduk 4x</span>
+         <span class="s2">**/</span>
+
+        <span class="s2">/**</span>
+         <span class="s2">* Latihan 4</span>
+         <span class="s2">* Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas</span>
+         <span class="s2">*</span>
+         <span class="s2">*/</span>
+        <span class="s0">fun </span><span class="s1">jalan(jumlah: Int) {</span>
+            <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..jumlah) {</span>
+                <span class="s1">println(</span><span class="s3">&quot;Jalan&quot;</span><span class="s1">)</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+        <span class="s0">fun </span><span class="s1">lari(jumlah: Int) {</span>
+            <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..jumlah) {</span>
+                <span class="s1">println(</span><span class="s3">&quot;Lari&quot;</span><span class="s1">)</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+        <span class="s0">fun </span><span class="s1">makan(jumlah: Int) {</span>
+            <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..jumlah) {</span>
+                <span class="s1">println(</span><span class="s3">&quot;Makan&quot;</span><span class="s1">)</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+        <span class="s0">fun </span><span class="s1">minum(jumlah: Int) {</span>
+            <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..jumlah) {</span>
+                <span class="s1">println(</span><span class="s3">&quot;Minum&quot;</span><span class="s1">)</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+        <span class="s0">fun </span><span class="s1">lompat(jumlah: Int) {</span>
+            <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..jumlah) {</span>
+                <span class="s1">println(</span><span class="s3">&quot;Lompat&quot;</span><span class="s1">)</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+        <span class="s0">fun </span><span class="s1">duduk(jumlah: Int) {</span>
+            <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..jumlah) {</span>
+                <span class="s1">println(</span><span class="s3">&quot;Duduk&quot;</span><span class="s1">)</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 1:&quot;</span><span class="s1">)</span>
+            <span class="s1">jalan(</span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">lari(</span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">makan(</span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">minum(</span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">lompat(</span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">duduk(</span><span class="s4">1</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 2:&quot;</span><span class="s1">)</span>
+            <span class="s1">jalan(</span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">lari(</span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">makan(</span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">minum(</span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">lompat(</span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">duduk(</span><span class="s4">2</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 3:&quot;</span><span class="s1">)</span>
+            <span class="s1">jalan(</span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s5">// Tidak ada fungsi &quot;Lari Ix&quot; yang ditentukan, mungkin ada kesalahan penulisan</span>
+            <span class="s1">makan(</span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">minum(</span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">lompat(</span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">duduk(</span><span class="s4">3</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 4:&quot;</span><span class="s1">)</span>
+            <span class="s5">// &quot;jalon&quot; mungkin merupakan kesalahan penulisan, diganti menjadi &quot;jalan&quot;</span>
+            <span class="s1">jalan(</span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">lari(</span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">makan(</span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">minum(</span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">lompat(</span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">duduk(</span><span class="s4">2</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 5:&quot;</span><span class="s1">)</span>
+            <span class="s1">jalan(</span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">lari(</span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">makan(</span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">minum(</span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">lompat(</span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">duduk(</span><span class="s4">3</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 6:&quot;</span><span class="s1">)</span>
+            <span class="s5">// &quot;jotan&quot; mungkin merupakan kesalahan penulisan, diganti menjadi &quot;jalan&quot;</span>
+            <span class="s1">jalan(</span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">lari(</span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">makan(</span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">minum(</span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">lompat(</span><span class="s4">7</span><span class="s1">)</span>
+            <span class="s1">duduk(</span><span class="s4">4</span><span class="s1">)</span>
+
+
+
+
+
+        <span class="s2">/**</span>
+         <span class="s2">* Latihan 5</span>
+         <span class="s2">* Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas</span>
+         <span class="s2">*</span>
+         <span class="s2">*/</span>
+
+        <span class="s0">fun </span><span class="s1">setProfile(activity: String</span><span class="s0">, </span><span class="s1">count: Int) {</span>
+            <span class="s1">println(</span><span class="s3">&quot;Melakukan aktivitas </span><span class="s0">$</span><span class="s1">activity </span><span class="s3">sebanyak </span><span class="s0">$</span><span class="s1">count </span><span class="s3">kali&quot;</span><span class="s1">)</span>
+        <span class="s1">}</span>
+
+        <span class="s0">fun </span><span class="s1">main() {</span>
+            <span class="s1">println(</span><span class="s3">&quot;Group 1:&quot;</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Jalan&quot;</span><span class="s0">, </span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lari&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Makan&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Minum&quot;</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lompat&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Duduk&quot;</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 2:&quot;</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Jalan&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lari&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Makan&quot;</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Minum&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lompat&quot;</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Duduk&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 3:&quot;</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Jalan&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s5">// Tidak ada aktivitas &quot;Lari Ix&quot;, mungkin ada kesalahan penulisan</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Makan&quot;</span><span class="s0">, </span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Minum&quot;</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lompat&quot;</span><span class="s0">, </span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Duduk&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 4:&quot;</span><span class="s1">)</span>
+            <span class="s5">// &quot;jalon&quot; mungkin merupakan kesalahan penulisan, diganti menjadi &quot;jalan&quot;</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Jalan&quot;</span><span class="s0">, </span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lari&quot;</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Makan&quot;</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Minum&quot;</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lompat&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Duduk&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 5:&quot;</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Jalan&quot;</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lari&quot;</span><span class="s0">, </span><span class="s4">1</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Makan&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Minum&quot;</span><span class="s0">, </span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lompat&quot;</span><span class="s0">, </span><span class="s4">5</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Duduk&quot;</span><span class="s0">, </span><span class="s4">3</span><span class="s1">)</span>
+
+            <span class="s1">println(</span><span class="s3">&quot;Group 6:&quot;</span><span class="s1">)</span>
+            <span class="s5">// &quot;jotan&quot; mungkin merupakan kesalahan penulisan, diganti menjadi &quot;jalan&quot;</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Jalan&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lari&quot;</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Makan&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Minum&quot;</span><span class="s0">, </span><span class="s4">2</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Lompat&quot;</span><span class="s0">, </span><span class="s4">7</span><span class="s1">)</span>
+            <span class="s1">setProfile(</span><span class="s3">&quot;Duduk&quot;</span><span class="s0">, </span><span class="s4">4</span><span class="s1">)</span>
+        <span class="s1">}</span>
+
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

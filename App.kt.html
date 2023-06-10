@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>App.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #629755; font-style: italic;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+App.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">id.infinitelearning.KotlinSubmission.exercise1</span>
+
+<span class="s2">/**</span>
+<span class="s2">Latihan 1</span>
+<span class="s2">Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan dibawah ini:</span>
+<span class="s2">- Variable bertipe data string yang menyimpan nilai nama depan Anda.</span>
+<span class="s2">- Variable bertipe data string yang menyimpan nilai nama belakang Anda.</span>
+<span class="s2">- Variable bertipe data number yang menyimpan nilai umur Anda.</span>
+<span class="s2">- Variable bertipe data boolean yang menyimpan nilai status Anda (single atau tidak)</span>
+<span class="s2">- Dan cetak setiap variabel ke layar saat fungsi myProfile() di panggil</span>
+ <span class="s2">*/</span>
+<span class="s0">fun </span><span class="s1">myProfile() {</span>
+
+    <span class="s0">var </span><span class="s1">firsName: String = </span><span class="s3">&quot;Astutik&quot;</span>
+    <span class="s0">var </span><span class="s1">listName: String = </span><span class="s3">&quot;Zaerani&quot;</span>
+    <span class="s0">var </span><span class="s1">age = </span><span class="s3">&quot;23&quot;</span>
+    <span class="s0">val </span><span class="s1">myTrueBoolean = </span><span class="s0">true</span>
+    <span class="s1">println(firsName)</span>
+    <span class="s1">println(listName)</span>
+    <span class="s1">println(age)</span>
+    <span class="s1">println(myTrueBoolean)</span>
+<span class="s1">}</span>
+
+
+<span class="s2">/**</span>
+ <span class="s2">*  Latihan 2</span>
+ <span class="s2">*  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println</span>
+ <span class="s2">*/</span>
+<span class="s0">fun </span><span class="s1">groupDetail(groupId: Int</span><span class="s0">, </span><span class="s1">groupMember: List&lt;Any&gt;</span><span class="s0">, </span><span class="s1">session: String): Any {</span>
+    <span class="s1">println(</span><span class="s3">&quot;</span><span class="s0">$</span><span class="s1">groupId</span><span class="s3">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s3">&quot;</span><span class="s0">$</span><span class="s1">groupMember</span><span class="s3">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s3">&quot;</span><span class="s0">$</span><span class="s1">session</span><span class="s3">&quot;</span><span class="s1">)</span>
+
+    <span class="s0">return </span><span class="s1">arrayOf(groupId</span><span class="s0">, </span><span class="s1">groupMember</span><span class="s0">, </span><span class="s1">session)</span>
+<span class="s1">}</span>
+
+<span class="s2">/**</span>
+ <span class="s2">* Latihan 3</span>
+ <span class="s2">* Buat variable yang berisi daftar anggota group kamu,</span>
+ <span class="s2">* Kemudian akses item yang berisi nama Anda dari variable tersebut, lalu jadikan nilai kembalian untuk fungsi myGroup ini</span>
+ <span class="s2">*</span>
+ <span class="s2">*/</span>
+<span class="s0">fun </span><span class="s1">myGroup(): String {</span>
+    <span class="s1">print(</span><span class="s3">&quot;Anggota group&quot;</span><span class="s1">)</span>
+    <span class="s0">var </span><span class="s1">cobaArray : Array&lt;String&gt; = arrayOf(</span><span class="s3">&quot;Tutik&quot;</span><span class="s0">,</span><span class="s3">&quot;Melisyah&quot;</span><span class="s0">,</span><span class="s3">&quot;Haikal&quot;</span><span class="s0">,</span><span class="s3">&quot;Bayu&quot;</span><span class="s0">,</span><span class="s3">&quot;Hari&quot;</span><span class="s1">)</span>
+    <span class="s0">var </span><span class="s1">name = cobaArray[</span><span class="s4">0</span><span class="s1">]</span>
+
+    <span class="s0">return </span><span class="s1">name</span>
+<span class="s1">}</span>
+
+<span class="s2">/**</span>
+ <span class="s2">* Latihan 4</span>
+ <span class="s2">* Ubah nilai kembalian untuk fungsi totalMember ini dengan rumus:</span>
+ <span class="s2">*</span>
+ <span class="s2">*      total mentor + jumlah anggota group</span>
+ <span class="s2">*</span>
+ <span class="s2">*/</span>
+<span class="s0">fun </span><span class="s1">totalMember(): Int {</span>
+    <span class="s0">val </span><span class="s1">mentor = arrayOf(</span><span class="s3">&quot;Dian&quot;</span><span class="s0">, </span><span class="s3">&quot;Shasa&quot;</span><span class="s0">, </span><span class="s3">&quot;Hasan&quot;</span><span class="s0">, </span><span class="s3">&quot;Reza&quot;</span><span class="s1">)</span>
+    <span class="s0">val </span><span class="s1">countOfGroup = </span><span class="s4">5</span>
+    <span class="s0">var </span><span class="s1">menti = mentor.size</span>
+    <span class="s0">return </span><span class="s1">menti+countOfGroup</span>
+
+<span class="s1">}</span>
+
+<span class="s0">fun </span><span class="s1">main() {</span>
+
+    <span class="s1">myProfile()</span>
+
+    <span class="s0">val </span><span class="s1">myGroup = myGroup()</span>
+    <span class="s1">println(</span><span class="s3">&quot;My Group is: </span><span class="s0">$</span><span class="s1">myGroup</span><span class="s3">&quot;</span><span class="s1">)</span>
+
+    <span class="s0">val </span><span class="s1">totalMember = totalMember()</span>
+    <span class="s1">println(</span><span class="s3">&quot;Total Member group + Mentor: </span><span class="s0">$</span><span class="s1">totalMember</span><span class="s3">&quot;</span><span class="s1">)</span>
+
+    <span class="s2">/**</span>
+     <span class="s2">*  Latihan 5</span>
+     <span class="s2">*  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu</span>
+     <span class="s2">*</span>
+     <span class="s2">*/</span>
+    <span class="s1">groupDetail(</span><span class="s4">1</span><span class="s0">, </span><span class="s1">listOf(</span><span class="s3">&quot;Anggota 1&quot;</span><span class="s0">, </span><span class="s3">&quot;Anggota 2&quot;</span><span class="s0">, </span><span class="s3">&quot;...&quot;</span><span class="s1">)</span><span class="s0">, </span><span class="s3">&quot;Morning&quot;</span><span class="s1">)</span>
+
+<span class="s1">}</span></pre>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>App.kt2.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #629755; font-style: italic;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+.s5 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+App.kt2.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">id.infinitelearning.KotlinSubmission.exercise2</span>
+
+<span class="s0">fun </span><span class="s1">main() {</span>
+
+    <span class="s2">/** Latihan 1 List</span>
+    <span class="s2">Buatlah sebuah variabel bertipe list dengan ketentuan:</span>
+    <span class="s2">- List tersebut menampung bilangan genap dari 1 hingga 100</span>
+    <span class="s2">Optional:</span>
+    <span class="s2">- Agar lebih mudah, gunakanlah for loop dan logika if untuk mengisi bilangan genap pada list</span>
+     <span class="s2">*/</span>
+<span class="s3">// Buat di bawah sini</span>
+
+    <span class="s0">val </span><span class="s1">number = mutableListOf&lt;Int&gt;()</span>
+    <span class="s0">for </span><span class="s1">(i </span><span class="s0">in </span><span class="s4">1</span><span class="s1">..</span><span class="s4">100</span><span class="s1">) {</span>
+        <span class="s0">if </span><span class="s1">(i % </span><span class="s4">2 </span><span class="s1">== </span><span class="s4">0</span><span class="s1">) {</span>
+            <span class="s1">number.add(i)</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s1">println(number)</span>
+
+    <span class="s2">/** Latihan 2 Map</span>
+    <span class="s2">Buatlah variabel bertipe Map dengan kriteria:</span>
+    <span class="s2">Daftar nama bulan dalam setahun,</span>
+    <span class="s2">- Set Key nya dengan inisial nama bulan dan Value nya nama bulan, contoh</span>
+    <span class="s2">- key &quot;Jan&quot;, value January</span>
+    <span class="s2">- key &quot;Feb&quot;, value February</span>
+    <span class="s2">- dst...</span>
+    <span class="s2">Cetak semua nama bulan dengan fungsi forEach sehingga hasil output seperti:</span>
+    <span class="s2">- Jan -&gt; January</span>
+    <span class="s2">- Feb -&gt; February</span>
+    <span class="s2">- Dst...</span>
+
+    <span class="s2">Cetak nama bulan sekarang dan bulan lahir kamu dengan format string berikut:</span>
+    <span class="s2">- &quot;It's {$monthNow} now, I was born in {$birthMonth}&quot;</span>
+     <span class="s2">*/</span>
+<span class="s3">// Buat di bawah sini</span>
+    <span class="s0">val </span><span class="s1">bulanMap = mapOf(</span>
+        <span class="s5">&quot;Jan &quot; </span><span class="s1">to  </span><span class="s5">&quot;Januari&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Feb&quot; </span><span class="s1">to </span><span class="s5">&quot;Februari&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Mar&quot; </span><span class="s1">to </span><span class="s5">&quot;Maret&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Apr&quot; </span><span class="s1">to </span><span class="s5">&quot;April&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Mei&quot; </span><span class="s1">to </span><span class="s5">&quot;Mei&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Jun&quot; </span><span class="s1">to </span><span class="s5">&quot;Juni&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Jul&quot; </span><span class="s1">to </span><span class="s5">&quot;Juli&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Agus&quot; </span><span class="s1">to </span><span class="s5">&quot;Agustus&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Septem&quot; </span><span class="s1">to </span><span class="s5">&quot;September&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Okto&quot; </span><span class="s1">to </span><span class="s5">&quot;Oktober&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Novem&quot; </span><span class="s1">to </span><span class="s5">&quot;November&quot;</span><span class="s0">,</span>
+        <span class="s5">&quot;Decem&quot; </span><span class="s1">to </span><span class="s5">&quot;December&quot;</span><span class="s0">,</span>
+    <span class="s1">)</span>
+    <span class="s1">println(bulanMap)</span>
+    <span class="s1">bulanMap.forEach {</span>
+        <span class="s1">println(it)</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
